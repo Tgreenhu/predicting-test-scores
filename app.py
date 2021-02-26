@@ -33,6 +33,10 @@ def font():
 def side():
     return render_template("sidebar-left.html")
 
+@app.route("/math")
+def math():
+    return render_template("ml_math.html")
+
 # Route 2
 @app.route("/jsonData")
 def PerformanceData():
