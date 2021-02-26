@@ -41,7 +41,7 @@ def PerformanceData():
         data['writing_score'] = row.writing_score
         student_info.append(data)
 
-    return jsonify(student_performances)
+    return jsonify(student_info)
 
 # Close our session
 session.close()
