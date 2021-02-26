@@ -21,6 +21,18 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
+@app.route("/full")
+def full():
+    return render_template("full-width.html")
+
+@app.route("/font")
+def font():
+    return render_template("font-icons.html")
+    
+@app.route("/side")
+def side():
+    return render_template("sidebar-left.html")
+
 # Route 2
 @app.route("/jsonData")
 def PerformanceData():
