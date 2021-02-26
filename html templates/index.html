@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>Students</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<link href="static rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet"/>
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"/>
+<link href="/static/css/black-dashboard-flask.css?v=1.0.0" rel="stylesheet"/>
+</head>
+<!-- </linkhref="static> -->
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay" style="background-image:url('images/th.jpg');"> 
+  <!-- ################################################################################################ -->
+  <div class="wrapper row0">
+    <div id="topbar" class="hoc clear"> 
+      <!-- ################################################################################################ -->
+      <div class="fl_left"> 
+        <!-- ################################################################################################ -->
+        <ul class="nospace">
+         
+          <li><i class="far fa-envelope"></i> groupnumbernine.com</li>
+        </ul>
+        <!-- ################################################################################################ -->
+      </div>
+      <div class="fl_right"> 
+        <!-- ################################################################################################ -->
+        <ul class="nospace">
+          <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+        
+          <li><a href="#" title="Login"><i class="fas fa-sign-in-alt"></i></a></li>
+        
+        </ul>
+        <!-- ################################################################################################ -->
+      </div>
+      <!-- ################################################################################################ -->
+    </div>
+  </div>
+
+  <div class="wrapper row1">
+    <header id="header" class="hoc clear"> 
+      <!-- ################################################################################################ -->
+      <div id="logo" class="fl_left">
+        <h1><a href="index.html">STUDENTS STATISTICS</a></h1>
+      </div>
+      <!-- ################################################################################################ -->
+      <nav id="mainav" class="fl_right">
+        <ul class="clear">
+             <li class="active"><a href="index.html">Home</a></li>
+                <li><a class="drop" href="#">Pages</a>
+                  <ul>
+                    <li><a href="pages/full-width.html">Table</a></li>
+                    <li><a href="pages/sidebar-left.html">Page2</a></li>
+                    <li><a href="pages/font-icons.html">Icons</a></li>
+                  </ul>
+               </li> 
+           <li><a class="drop" href="#">NBA TEAM</a>
+              <ul>
+               <li> 
+                <select
+                     id="selDataset"
+                     onchange="optionChanged(this.value)"></select>
+               </li>
+             </ul>
+           </li>
+        </ul>
+      </nav>
+      <!-- ################################################################################################ -->
+    </header>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div id="pageintro" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <article class="center">
+      <h3 class="heading underline">Students STATISTICS</h3>
+      <p>Below we are showing  a statistical analysis of the NBA Players and Teams.</p>
+      
+    </article>
+    <!-- ################################################################################################ -->
+  </div>
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Top Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="center btmspace-80">
+      <h6 class="heading underline font-x2">Results</h6>
+    </div>
+    <ul class="nospace group overview btmspace-80">
+      <li class="one_third first">
+        <article><a href="#"><i class="fas fa-basketball-ball"></i></a>
+          <h6 class="heading"><a href="#"> other vs other</a></h6>
+          <div id="bubble"></div>
+         
+       </article>
+      </li>
+      <li class="one_third">
+        <article><a href="#"><i class="fas fa-tachometer-alt"></i></a>
+          <h6 class="heading"><a href="#">Something vs, Something</a></h6>
+          <div id="scatter"></div>
+      
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a href="#"><i class="fas fa-thumbs-up"></i></a>
+          <h6 class="heading"><a href="#">minnutes vs. .....</a></h6>
+          <div id="plot"></div>
+          
+        </article>
+      </li>
+      
+    </ul>
+   
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- <div class="wrapper row2">
+      <article class="hoc container clear"> 
+      </article>
+      </div> -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+ <div class="bgded overlay startlt light" style="background-image:url('images/nba-sign.jpg');">
+  <section id="segment" class="hoc clear"></section>
+ </div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper bgded overlay" style="background-image:url('images/nba-sign.jpg');">
+  <section id="testimonials" class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <!-- <div class="center btmspace-80"> -->
+    <!-- ################################################################################################ -->
+  </section>
+</div>
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row4">
+  <footer id="footer" class="hoc clear"> 
+    
+    <div class="center btmspace-50">
+      <h6 class="heading">GROUPNUMBERNINE</h6>
+      <nav>
+        <ul class="nospace inline pushright uppercase"> </ul>
+      </nav>
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- <hr class="btmspace-50"> -->
+    <!-- ################################################################################################ -->
+    <div class="group">
+      <div class="one_half first">
+        <h6 class="heading">Gruponumbernine</h6>
+        <ul class="nospace btmspace-30 linklist contact">
+          <li><i class="fas fa-map-marker-alt"></i>
+            <address>
+            Street Name &amp; Number, Town, Postcode/Zip
+            </address>
+          </li>
+         
+          <li><i class="far fa-envelope"></i> groupnumbernine.com</li>
+        </ul>
+        <ul class="faico clear">
+      
+        </ul>
+      </div>
+    </div>
+    
+  </footer>
+</div>
+
+
+
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <p class="fl_left">Copyright &copy; 2021 - All Rights Reserved - <a href="#">www.groupnumbernine.com</a></p>
+  </div>
+</div>
+
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+
+<!-- JAVASCRIPTS -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="/app.js"></script>
+<script src="/layout/scripts/jquery.min.js"></script>
+<script src="/layout/scripts/jquery.backtotop.js"></script>
+<script src="/layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>
