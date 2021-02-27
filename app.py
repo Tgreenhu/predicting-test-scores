@@ -16,28 +16,42 @@ session = Session(engine)
 # Create our flask app
 app = Flask(__name__)
 
-# Route 1
+# Route Home
 @app.route("/")
 def home():
     return render_template("index.html")
 
+# Route Data Chart
 @app.route("/full")
 def full():
     return render_template("full-width.html")
 
+# Route ******Nothing Yet******
 @app.route("/font")
 def font():
     return render_template("font-icons.html")
-    
+
+# Route Tableau Dashboard
 @app.route("/side")
 def side():
     return render_template("sidebar-left.html")
 
+# Route Machine Learning Math
 @app.route("/math")
 def math():
     return render_template("ml_math.html")
 
-# Route 2
+# Route Machine Learning Reading
+@app.route("/reading")
+def reading():
+    return render_template("ml_reading.html")
+
+# Route Machine Learning Writing
+@app.route("/writing")
+def writing():
+    return render_template("ml_writing.html")
+
+# Route jsonData
 @app.route("/jsonData")
 def PerformanceData():
     student_scores = engine.execute('''SELECT * FROM student_scores''')

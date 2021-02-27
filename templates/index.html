@@ -3,13 +3,12 @@
 <html lang="eng">
   <!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
   <head>
-    <title>Students</title>
+    <title>Exam Scores</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <!-- <link href="../static/styles/layout.css" rel="stylesheet" type="text/css" media="all"> -->
     <link
       href="static"
       rel="stylesheet"
@@ -25,12 +24,8 @@
       href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"
       rel="stylesheet"
     />
-    <!-- <link href="/static/css/black-dashboard-flask.css?v=1.0.0" rel="stylesheet"/> -->
-    <!-- <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/layout.css') }}">
-<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/framework.css') }}"> -->
     <link rel="stylesheet" href="/static/css/layout.css" />
   </head>
-  <!-- </linkhref="static> -->
   <body id="top">
     <!-- ################################################################################################ -->
     <!-- ################################################################################################ -->
@@ -57,10 +52,6 @@
               <li>
                 <a href="/"><i class="fas fa-home"></i></a>
               </li>
-
-              <li>
-                <a href="#" title="Login"><i class="fas fa-sign-in-alt"></i></a>
-              </li>
             </ul>
             <!-- ################################################################################################ -->
           </div>
@@ -82,19 +73,17 @@
                 <a class="drop" href="#">Visuals/Graphics</a>
                 <ul>
                   <li><a href="/full">Data Table</a></li>
-                  <li><a href="/side">Page2</a></li>
+                  <li><a href="/side">Dashboard</a></li>
                   <li><a href="/font">Icons</a></li>
-                  <li><a href="#">Something (Visual?)</a></li>
-
                 </ul>
               </li>
               <li>
-                <a class="drop" href="#">What is your score?</a>
+                <a class="drop" href="#">Performance Model</a>
                 <!-- DEPENDING ON HOW WE USE THE MACHINE LEARNING WILL DETERMINE IF WE KEEP THIS AND IF WE WILL NEED TO CREATE MORE HTMLS  -->
                 <ul>
-                  <li><a href="/math">ML 1</a></li>
-                  <li><a href="/side">ML 2</a></li>
-                  <li><a href="/font">ML 3</a></li>
+                  <li><a href="/math">Math</a></li>
+                  <li><a href="/reading">Reading</a></li>
+                  <li><a href="/writing">Writing</a></li>
                 </ul>
 
                 <!-- <ul>
@@ -116,11 +105,10 @@
       <div id="pageintro" class="hoc clear">
         <!-- ################################################################################################ -->
         <article class="center">
-          <h3 class="heading underline">Student <br> PERFORMANCE</h3>
-          <p>
-            Below is a dashboard of the common trends in student
-            performances.
-          </p>
+          <h3 class="heading underline">
+            Student <br />
+            PERFORMANCE
+          </h3>
         </article>
         <!-- ################################################################################################ -->
       </div>
@@ -134,31 +122,53 @@
       <main class="hoc container clear">
         <!-- main body -->
         <!-- ################################################################################################ -->
-        <div class="center btmspace-80">
-          <h6 class="heading underline font-x2">Results</h6>
+        <div class="center btmspace-40">
+          <h4 class="heading underline font-x2">Summary</h4>
         </div>
         <ul class="nospace group overview btmspace-80">
-          <li class="one_third first">
+          <li class="first">
             <article>
-              <a href="#"><i class="fas fa-basketball-ball"></i></a>
-              <h6 class="heading"><a href="#"> other vs other</a></h6>
-              <div id="bubble"></div>
+              <div id="bubble" style="font-size: larger;">
+                This project is based on data we found on public school
+                students’ test scores across the subjects of math, reading, and
+                writing. With a dataset of 1,000 students recorded, each student
+                is broken down into various categories such as gender,
+                race/ethnicity, whether they attended test preparation, and
+                parental factors. Our project is to create a machine learning
+                model that can predict each students’ test score depending on
+                the features given. We decided to use Logistic Regression in
+                efforts to most accurately predict the student’s test score for
+                each subject. 
+                <br><br>
+                Under the Visuals/Graphics tab above, you will see
+                an option to view our entire dataset, as well as a Tableau
+                visuals dashboard. Within the data, we discovered the following
+                findings:
+                <br><br>
+                1. The higher a student’s parental education was, the
+                higher test score the student achieved across most subjects.
+                <br>
+                2. While we do not know which groups represent which
+                ethnicity/race, groups D & E both scored the highest on each
+                subject test scores. 
+                <br>
+                3. Males averaged a higher test score than
+                females across all three subjects, including an almost 15 point
+                gap in math. 
+                <br>
+                4. As expected, students that completed a test
+                preparation class averaged around 10 points or better on all
+                three of their test score than students who did not.
+              </div>
             </article>
           </li>
-          <li class="one_third">
+          <!-- <li class="one_half">
             <article>
               <a href="#"><i class="fas fa-tachometer-alt"></i></a>
               <h6 class="heading"><a href="#">Something vs, Something</a></h6>
               <div id="scatter"></div>
             </article>
-          </li>
-          <li class="one_third">
-            <article>
-              <a href="#"><i class="fas fa-thumbs-up"></i></a>
-              <h6 class="heading"><a href="#">minnutes vs. .....</a></h6>
-              <div id="plot"></div>
-            </article>
-          </li>
+          </li> -->
         </ul>
 
         <!-- ################################################################################################ -->
@@ -185,13 +195,13 @@
 
     <!-- ################################################################################################ -->
     <!-- ################################################################################################ -->
-    <div class="wrapper bgded overlay">
-      <section id="testimonials" class="hoc container clear">
-        <!-- ################################################################################################ -->
-        <!-- <div class="center btmspace-80"> -->
-        <!-- ################################################################################################ -->
-      </section>
-    </div>
+    <!-- <div class="wrapper bgded overlay">
+      <section id="testimonials" class="hoc container clear"> -->
+    <!-- ################################################################################################ -->
+    <!-- <div class="center btmspace-80"> -->
+    <!-- ################################################################################################ -->
+    <!-- </section>
+    </div> -->
 
     <!-- ################################################################################################ -->
     <!-- ################################################################################################ -->
@@ -208,7 +218,7 @@
         <!-- ################################################################################################ -->
         <div class="group">
           <div class="one_half first">
-            <h6 class="heading">Gruponumbernine</h6>
+            <h6 class="heading">GrupoNumberNine</h6>
             <ul class="nospace btmspace-30 linklist contact">
               <li>
                 <i class="fas fa-map-marker-alt"></i>
