@@ -9,7 +9,7 @@ from config import username, password
 
 
 # Create Engine & Start Session
-engine = create_engine(os.getenv("postgresql://DB_USERNAME:DB_PASSWORD@localhost:5432/student_performances",f"postgresql://{username}:{password}@localhost:5432/student_performances"))
+engine = create_engine(os.getenv("postgres://sktidavxmrbbnq:e01c0566a2a333c95e422ef10f34c7168ae6a47ee5d970c640a6d15a29419467@ec2-54-209-43-223.compute-1.amazonaws.com:5432/dd2q2su5bis4cl",f"postgresql://{username}:{password}@localhost:5432/student_performances"))
 Base = automap_base()
 Base.prepare(engine, reflect=True)
 session = Session(engine)
