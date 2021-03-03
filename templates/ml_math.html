@@ -62,7 +62,7 @@
               <ul>
                 <li><a href="/full">Data Table</a></li>
                 <li><a href="/side">Dashboard</a></li>
-                <li><a href="/font">Font Icons</a></li>
+                <!-- <li><a href="/font">Font Icons</a></li> -->
 
               </ul>
             </li>
@@ -110,9 +110,14 @@
           <div class="col-md-12">
             <img src="/static/images/math_r2.png" alt="Math Score R2" class="img-responsive"
               style="width: 250px; height: 50px" />
-            <p>The R2 score (R squared or coeffficient of determination) gave a value of 0.242.</p>
-
           </div>
+        </div>
+
+        <div class="offset-3 col-md-6">
+          <p style="text-align:center; font-size: larger">Using Linear Regression we discovered that the R2 score was
+            around 0.24, the highest out of the three
+            tested subjects. This means that the independent variables given in our dataset had very little importance
+            when determining a student’s math score.</p>
         </div>
 
         <div>
@@ -127,7 +132,6 @@
                     style="width: 400px; height: 400px" />
                 </div>
               </article>
-              <p>hi</p>
             </li>
 
           </div>
@@ -142,30 +146,20 @@
                     style="width: 300px; height: 400px" />
                 </div>
               </article>
-              <p>hi</p>
             </li>
 
           </div>
 
         </div>
 
-        <!-- <div class = "row center">
-
-          <div class="col-md-12">
-            <img src="/static/images/math_plot.png" alt="Math Score Plot" class="img-responsive"
-            style="width: 400px; height: 400px" />    
-
-          </div>
-          
-          <div class="col-md-12">
-            <img src="/static/images/math_importance.png" alt="Math Score Importance" class="img-responsive"
-            style="width: 300px; height: 400px" />
-            
-          </div>
-          
-        </div> -->
-
-
+        <br>
+        <div class="offset-3 col-md-6">
+          <p style="text-align:center; font-size: larger"> <br> We then used a Random Forest Classifier to determine out
+            of the features in our dataset, which seemed to
+            have the most significance when predicting math scores. As shown here, even though no features have a huge
+            impact on determining math scores, ethnic groups have the strongest significance.
+          </p>
+        </div>
 
       </div>
       <!-- ################################################################################################ -->
