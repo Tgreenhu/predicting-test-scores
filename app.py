@@ -5,17 +5,11 @@ import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func
-if (os.getenv("ENV_VAR") != "production"):
-    from config import username, password
-else:
-    pass
-
+from config import username, password
 
 
 # Create Engine & Start Session
-env_username = os.getenv("DB_USERNAME", username)
-env_password = os.getenv("DB_PASSWORD", password)
-engine = create_engine(f"postgresql://{env_username}:{env_password}@localhost:5432/student_performances")
+engine = create_engine(os.getenv("postgresql://DB_USERNAME:DB_PASSWORD@localhost:5432/student_performances",f"postgresql://{username}:{password}@localhost:5432/student_performances"))
 Base = automap_base()
 Base.prepare(engine, reflect=True)
 session = Session(engine)
