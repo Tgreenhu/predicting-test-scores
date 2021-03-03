@@ -7,8 +7,11 @@ from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func
 from config import username, password
 
+
 # Create Engine & Start Session
-engine = create_engine(f"postgresql://{username}:{password}@localhost:5432/student_performances")
+env_username = os.getenv("DB_USERNAME", username)
+env_password = os.getenv("DB_PASSWORD", password)
+engine = create_engine(f"postgresql://{env_username}:{env_password}@localhost:5432/student_performances")
 Base = automap_base()
 Base.prepare(engine, reflect=True)
 session = Session(engine)
