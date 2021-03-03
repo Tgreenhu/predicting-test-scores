@@ -5,7 +5,11 @@ import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func
-from config import username, password
+if (os.getenv("ENV_VAR") != "production"):
+    from config import username, password
+else:
+    pass
+
 
 
 # Create Engine & Start Session
